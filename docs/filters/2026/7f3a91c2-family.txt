@@ -4,7 +4,7 @@
 ! Source: https://github.com/kangsicj/family-filter-assets/blob/main/docs/filters/2026/7f3a91c2-family.txt
 ! Version: 2026.06.17.1
 ! Last modified: 2026-06-17
-! Expires: 4 hours
+! Expires: 1 day
 !
 *#@##notice_list
 ##div[id*="ad_banner"]
