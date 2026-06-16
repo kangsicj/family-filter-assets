@@ -1,0 +1,95 @@
+! Title: Jin Family AdGuard Custom Rules
+! Description: Family-shared AdGuard custom filter rules.
+! Homepage: https://github.com/kangsicj/family-filter-assets
+! Source: https://github.com/kangsicj/family-filter-assets/blob/main/docs/filters/2026/7f3a91c2-family.txt
+! Version: 2026.06.17.1
+! Last modified: 2026-06-17
+! Expires: 4 hours
+!
+*#@##notice_list
+##div[id*="ad_banner"]
+##.floating-ad
+##.goods-list__ad
+##div[class*="products_list_recommend__"]
+###MM_search_container
+###_LEVERAGE_PROMOTION
+###sb-kh-recomm-wrap
+###sb-kh-shortents-wrap
+###bo_v > div.layer-footer:nth-child(2)
+###bo_v > ul:nth-child(2)
+###sdp-ad-middle-banner-md-position
+###sdp-ad-middle-banner-lg-position
+###wif_adx_banner_wrap
+###div_new_power_link_view
+##.google-ads
+##.stickyunit
+##.power-link02
+##.smart_channel
+###whale-banner > div.banner_top
+###bannerList
+@@||cdn.discordapp.com/icons/$third-party
+@@||cdn.discordapp.com/emojis/$third-party
+@@||cdn.discordapp.com/avatars/$third-party
+@@||cafe24img.poxo.com/waxmania1/web/$domain=hairwax.co.kr,third-party
+youtube.com##ytd-compact-promoted-video-renderer
+youtube.com##ytd-promoted-sparkles-web-renderer
+youtube.com##ytd-ad-slot-renderer
+youtube.com##.ytd-in-feed-ad-layout-renderer
+youtube.com##.paper-toast-open.yt-notification-action-renderer.style-scope.toast-button
+youtube.com##.sticker-layer.ytd-reel-video-renderer
+naver.com##.powerlink_wrap
+naver.com##div[class*="_ad_area"]
+n.news.naver.com##.media_end_linked:has-text(광고)
+search.shopping.naver.com##.section_section__8wTvh
+m.naver.com###__MM_CHANNEL_UNSUBSCRIBE_ITEMS
+m.naver.com##div:has(> span.ad_bg)
+m.naver.com##.ad_section
+daum.net##div[class^="ad_"]
+daum.net##.box_ad
+daum.net##.tit_ad
+||m.coupang.com/vm/mlp/^
+||m.coupang.com/vm/mlp/mweb/^
+ppomppu.co.kr##div[class^="ad-banner"]
+ppomppu.co.kr##.ppomCou
+dcinside.com,gall.dcinside.com###top > div.gnb_bar > nav.gnb > ul.gnb_list > li.gnb_more
+algumon.com##li:has(span:has-text(스폰서))
+algumon.com##li:has(span:has-text(광고))
+algumon.com##.dashboard.component-desktop
+etoland.co.kr##div[id^="jizsl_"]
+kissneo.co##.ads
+kissneo.co##.ad-y
+xn--v69ak0xskm.com##.map-pc-vertical-ad-anchor
+xn--v69ak0xskm.com##.map-pc-bottom-band-ad-anchor
+xn--v69ak0xskm.com##.map-like-ranking-ad-item
+ntp.msn.com##.recommended-sites
+ntp.msn.com###recommendedSites
+ntp.msn.com##.recommendedSitesSponsoredLabel
+startpage.com###master-1
+dramago.in###custom_html-9
+dramago.in##.widget_text
+dramago.in##.widget
+dramago.in##.widget_custom_html
+new.mnd.go.kr##div:nth-child(2) > button
+streameast24.net,falconstreams.net##header
+streameast24.net,falconstreams.net##footer
+streameast24.net,falconstreams.net##div[class*="bg-[#5865F2]"]
+streameast24.net,falconstreams.net##a[href*="discord.gg"]
+streameast24.net,falconstreams.net##div[class*="block lg:hidden"][class*="space-y-5"]
+streameast24.net,falconstreams.net##div[class="hidden lg:flex flex-col justify-end gap-4 p-4"]
+streameast24.net,falconstreams.net##div[class*="chat-max-height-wide"]
+streameast24.net,falconstreams.net##div:has(> div > button[title="Share on Facebook"])
+streameast24.net,falconstreams.net##div[style*="max-width: 970px"]
+streamed.pk,ppv.to,ppv.domains,ppv.st,ppv.is,ppv.lc##header
+streamed.pk,ppv.to,ppv.domains,ppv.st,ppv.is,ppv.lc##footer
+streamed.pk,ppv.to,ppv.domains,ppv.st,ppv.is,ppv.lc##li:has(> a[href*="discord"])
+streamed.pk,ppv.to,ppv.domains,ppv.st,ppv.is,ppv.lc##div[data-orientation="vertical"]:has(a[href*="/discord"])
+streamed.pk,ppv.to,ppv.domains,ppv.st,ppv.is,ppv.lc##div[class*="mt-6"]:has(a[href*="discord.com"])
+streamed.pk,ppv.to,ppv.domains,ppv.st,ppv.is,ppv.lc##div[class*="md:w-1/4"]:has(div[class*="chat-container"])
+streamed.pk,ppv.to,ppv.domains,ppv.st,ppv.is,ppv.lc##div[class*="bg-primary/10"]
+streamed.pk,ppv.to,ppv.domains,ppv.st,ppv.is,ppv.lc##button:has(svg.lucide-copy)
+streamed.pk,ppv.to,ppv.domains,ppv.st,ppv.is,ppv.lc##button:has(span.i-lucide\:share)
+streamed.pk,ppv.to,ppv.domains,ppv.st,ppv.is,ppv.lc##div[class*="w-[25.5vw]"]
+streamed.pk,ppv.to,ppv.domains,ppv.st,ppv.is,ppv.lc##div[class="lg:hidden flex-1 min-h-0"]
+streamed.pk,ppv.to,ppv.domains,ppv.st,ppv.is,ppv.lc##div[class*="fixed"][class*="bottom-0"][class*="z-50"]
+streamed.pk,ppv.to,ppv.domains,ppv.st,ppv.is,ppv.lc#$#div[class*="lg:mr-[25.5vw]"] { margin-right: 0 !important; }
+streamed.pk,ppv.to,ppv.domains,ppv.st,ppv.is,ppv.lc#$#main { min-height: 100vh !important; padding-bottom: 0 !important; }
