@@ -2,35 +2,39 @@
 ! Description: Family-shared AdGuard custom filter rules.
 ! Homepage: https://github.com/kangsicj/family-filter-assets
 ! Source: https://github.com/kangsicj/family-filter-assets/blob/main/docs/filters/2026/7f3a91c2-family.txt
-! Version: 2026.06.17.1
+! Version: 2026.06.17.2
 ! Last modified: 2026-06-17
 ! Expires: 1 day
 !
-*#@##notice_list
-##div[id*="ad_banner"]
-##.floating-ad
-##.goods-list__ad
-##div[class*="products_list_recommend__"]
-###MM_search_container
-###_LEVERAGE_PROMOTION
-###sb-kh-recomm-wrap
-###sb-kh-shortents-wrap
-###bo_v > div.layer-footer:nth-child(2)
-###bo_v > ul:nth-child(2)
-###sdp-ad-middle-banner-md-position
-###sdp-ad-middle-banner-lg-position
-###wif_adx_banner_wrap
-###div_new_power_link_view
-##.google-ads
-##.stickyunit
-##.power-link02
-##.smart_channel
-###whale-banner > div.banner_top
-###bannerList
 @@||cdn.discordapp.com/icons/$third-party
 @@||cdn.discordapp.com/emojis/$third-party
 @@||cdn.discordapp.com/avatars/$third-party
 @@||cafe24img.poxo.com/waxmania1/web/$domain=hairwax.co.kr,third-party
+*#@##notice_list
+##div[id*="ad_banner"]
+##div[class*="products_list_recommend__"]
+##.floating-ad
+##.goods-list__ad
+##.google-ads
+##.stickyunit
+##.power-link02
+##.smart_channel
+##.partner-br-wrap
+##.partner-banner-wrap
+##.ad-banner.middle-banner
+###MM_search_container
+###_LEVERAGE_PROMOTION
+###sb-kh-recomm-wrap
+###sb-kh-shortents-wrap
+###wif_adx_banner_wrap
+###div_new_power_link_view
+###bannerList
+###tabs-container
+###sdp-ad-middle-banner-md-position
+###sdp-ad-middle-banner-lg-position
+###bo_v > div.layer-footer:nth-child(2)
+###bo_v > ul:nth-child(2)
+###whale-banner > div.banner_top
 youtube.com##ytd-compact-promoted-video-renderer
 youtube.com##ytd-promoted-sparkles-web-renderer
 youtube.com##ytd-ad-slot-renderer
@@ -40,6 +44,7 @@ youtube.com##.sticker-layer.ytd-reel-video-renderer
 naver.com##.powerlink_wrap
 naver.com##div[class*="_ad_area"]
 n.news.naver.com##.media_end_linked:has-text(광고)
+n.news.naver.com##div[class*="_LAZY_LOADING_TEMPLATE_SCRIPT"]
 search.shopping.naver.com##.section_section__8wTvh
 m.naver.com###__MM_CHANNEL_UNSUBSCRIBE_ITEMS
 m.naver.com##div:has(> span.ad_bg)
@@ -51,6 +56,7 @@ daum.net##.tit_ad
 ||m.coupang.com/vm/mlp/mweb/^
 ppomppu.co.kr##div[class^="ad-banner"]
 ppomppu.co.kr##.ppomCou
+dcinside.com,gall.dcinside.com###top > div.gnb_bar nav.gnb ul.gnb_list > li.gnb_more
 dcinside.com,gall.dcinside.com###top > div.gnb_bar > nav.gnb > ul.gnb_list > li.gnb_more
 algumon.com##li:has(span:has-text(스폰서))
 algumon.com##li:has(span:has-text(광고))
