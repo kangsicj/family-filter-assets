@@ -1,81 +1,264 @@
 ! Title: Jin Family AdGuard Custom Rules
-! Description: Family-shared AdGuard custom filter rules.
+! Description: Family allowlist, compatibility fixes, and site-scoped ad and clutter rules.
 ! Homepage: https://github.com/kangsicj/family-filter-assets
 ! Source: https://github.com/kangsicj/family-filter-assets/blob/main/docs/filters/2026/7f3a91c2-family.txt
-! Version: 2026.06.17.2
-! Last modified: 2026-06-17
+! Version: 2026.07.14.1
+! Last modified: 2026-07-14
 ! Expires: 1 day
+! Syntax: AdGuard
 !
+! Full-document allowlist imported from the family's AdGuard extension.
+! These rules intentionally disable filtering on the matched host and subdomains.
+! Source hosts: 192; effective rules: 171; covered subdomains collapsed: 21.
+!
+@@||172.30.1.254^$document
+@@||192.168.0.1^$document
+@@||19media.jandi.com^$document
+@@||2024dhevent.co.kr^$document
+@@||accentjobs.be^$document
+@@||account.live.com^$document
+@@||account.microsoft.com^$document
+@@||accounts.kt.com^$document
+@@||accountscenter.facebook.com^$document
+@@||adguard-vpn.com^$document
+@@||agoda.com^$document
+@@||airportal.go.kr^$document
+@@||aniwave.to^$document
+@@||aniwave.tv^$document
+@@||apachezone.com^$document
+@@||app.vsaex.visualstudio.com^$document
+@@||apple.com^$document
+@@||apply.lh.or.kr^$document
+@@||apps.cozo.be^$document
+@@||asiamobile.kr^$document
+@@||authenticatie.vlaanderen.be^$document
+@@||azmonica.be^$document
+@@||banolimpizza.com^$document
+@@||beelden.zna.be^$document
+@@||belgium.be^$document
+@@||bigdata-map.kr^$document
+@@||bissell.co.kr^$document
+@@||booking.com^$document
+@@||boostcamp.connect.or.kr^$document
+@@||brussels.sejonghakdang.org^$document
+@@||burgerprofiel.be^$document
+@@||buysense.pages.dev^$document
+@@||cafepeople.co.kr^$document
+@@||card-gorilla.com^$document
+@@||cert.hoseo.ac.kr^$document
+@@||cgv.co.kr^$document
+@@||chat.openai.com^$document
+@@||chatgpt.com^$document
+@@||checkout.gmarket.co.kr^$document
+@@||chevrolet.co.kr^$document
+@@||childcare.go.kr^$document
+@@||cm.be^$document
+@@||concepts1one.co.kr^$document
+@@||customer.kbcard.com^$document
+@@||daangn.com^$document
+@@||dcrefresher.green1052.com^$document
+@@||decathlon.be^$document
+@@||dept.galleria.co.kr^$document
+@@||detecting-ai.com^$document
+@@||dhlottery.co.kr^$document
+@@||dic.or.kr^$document
+@@||digital.etihad.com^$document
+@@||efset.org^$document
+@@||ehealth.fgov.be^$document
+@@||escrow.wemakeprice.com^$document
+@@||eungdapso.seoul.go.kr^$document
+@@||europa.eu^$document
+@@||eyes.co.kr^$document
+@@||familynet.or.kr^$document
+@@||flight.naver.com^$document
+@@||flights.myrealtrip.com^$document
+@@||google.com^$document
+@@||gov.kr^$document
+@@||gyeryong.go.kr^$document
+@@||hakgwa.pcu.ac.kr^$document
+@@||handmadepizza.co.kr^$document
+@@||handphone.or.kr^$document
+@@||hanwhaeagles.co.kr^$document
+@@||hibitsoft.ir^$document
+@@||hikorea.go.kr^$document
+@@||hometax.go.kr^$document
+@@||hotel.naver.com^$document
+@@||i.models.com^$document
+@@||iksi.or.kr^$document
+@@||item.gmarket.co.kr^$document
+@@||itempage3.auction.co.kr^$document
+@@||itigic.com^$document
+@@||itsme-id.com^$document
+@@||iversity.org^$document
+@@||jungoneshop.com^$document
+@@||juso.go.kr^$document
+@@||k-eta.go.kr^$document
+@@||karcher.co.kr^$document
+@@||kcopa.or.kr^$document
+@@||khig.khug.or.kr^$document
+@@||kipris.or.kr^$document
+@@||kmooc.kr^$document
+@@||korean.go.kr^$document
+@@||ksif.or.kr^$document
+@@||letsplayuno.com^$document
+@@||lfmall.co.kr^$document
+@@||linkedin.com^$document
+@@||linkvertise.com^$document
+@@||login.live.com^$document
+@@||login.microsoft.com^$document
+@@||lotteimall.com^$document
+@@||lotteon.com^$document
+@@||lottesweetmall.com^$document
+@@||lufthansa.com^$document
+@@||m.11st.co.kr^$document
+@@||m.megacoffee.co.kr^$document
+@@||map.kakao.com^$document
+@@||mbcplus.com^$document
+@@||mediamarkt.be^$document
+@@||megabox.co.kr^$document
+@@||mijn.zas.be^$document
+@@||minfin.fgov.be^$document
+@@||minigold.co.kr^$document
+@@||mixxo.com^$document
+@@||musinsa.com^$document
+@@||my.kt.com^$document
+@@||myebox.be^$document
+@@||narasarang.or.kr^$document
+@@||npms.pr.go.kr^$document
+@@||ntp.msn.com^$document
+@@||obank.kbstar.com^$document
+@@||ohou.se^$document
+@@||onnurigood.com^$document
+@@||openuped.eu^$document
+@@||overseas.mofa.go.kr^$document
+@@||pasionpasion.kr^$document
+@@||paypal.com^$document
+@@||pindirectshop.com^$document
+@@||pizzahut.co.kr^$document
+@@||plugin.connective.eu^$document
+@@||qoo10.com^$document
+@@||r1.community.samsung.com^$document
+@@||rangpang.co.kr^$document
+@@||recruit.igloo.co.kr^$document
+@@||ringke.co.kr^$document
+@@||roamic.com^$document
+@@||rt.molit.go.kr^$document
+@@||ruu.kr^$document
+@@||samfw.com^$document
+@@||samsunglife.com^$document
+@@||saramin.co.kr^$document
+@@||search.shopping.naver.com^$document
+@@||shopping.interpark.com^$document
+@@||smart.dhn.kr^$document
+@@||smartthingsfind.samsung.com^$document
+@@||spam.kisa.or.kr^$document
+@@||spao.com^$document
+@@||speechify.com^$document
+@@||ssg.com^$document
+@@||stepstone.be^$document
+@@||stores.auction.co.kr^$document
+@@||sugarmobile.co.kr^$document
+@@||support.bluestacks.com^$document
+@@||support.microsoft.com^$document
+@@||thejewel.co.kr^$document
+@@||ticket.melon.com^$document
+@@||tkr493.com^$document
+@@||topten10.goodwearmall.com^$document
+@@||tour.interpark.com^$document
+@@||tplusmobile.com^$document
+@@||travel.jr-central.co.jp^$document
+@@||unixshop.co.kr^$document
+@@||uplusmvno.com^$document
+@@||vdab.be^$document
+@@||weather.gov^$document
+@@||web.dominos.co.kr^$document
+@@||whypaymore.co.kr^$document
+@@||wikidocs.net^$document
+@@||work24.go.kr^$document
+@@||wtg-study.tistory.com^$document
+@@||www.cdec.kr^$document
+@@||www.historyexam.go.kr^$document
+@@||www.momstouch.co.kr^$document
+@@||www.tmon.co.kr^$document
+@@||www.tving.com^$document
+@@||yomiuri-travel.com^$document
+
+! Compatibility exceptions
 @@||cdn.discordapp.com/icons/$third-party
 @@||cdn.discordapp.com/emojis/$third-party
 @@||cdn.discordapp.com/avatars/$third-party
 @@||cafe24img.poxo.com/waxmania1/web/$domain=hairwax.co.kr,third-party
-*#@##notice_list
-##div[id*="ad_banner"]
-##div[class*="products_list_recommend__"]
-##.floating-ad
-##.goods-list__ad
-##.google-ads
-##.stickyunit
-##.power-link02
-##.smart_channel
-##.partner-br-wrap
-##.partner-banner-wrap
-##.ad-banner.middle-banner
-###MM_search_container
-###_LEVERAGE_PROMOTION
-###sb-kh-recomm-wrap
-###sb-kh-shortents-wrap
-###wif_adx_banner_wrap
-###div_new_power_link_view
-###bannerList
-###tabs-container
-###sdp-ad-middle-banner-md-position
-###sdp-ad-middle-banner-lg-position
-###bo_v > div.layer-footer:nth-child(2)
-###bo_v > ul:nth-child(2)
-###whale-banner > div.banner_top
+
+! YouTube ads and family decluttering
 youtube.com##ytd-compact-promoted-video-renderer
 youtube.com##ytd-promoted-sparkles-web-renderer
 youtube.com##ytd-ad-slot-renderer
 youtube.com##.ytd-in-feed-ad-layout-renderer
 youtube.com##.paper-toast-open.yt-notification-action-renderer.style-scope.toast-button
 youtube.com##.sticker-layer.ytd-reel-video-renderer
+
+! Naver ads and family decluttering
+naver.com###timeboard-ex
+naver.com###ad_premium_area
+naver.com###whale-banner > div.banner_top
 naver.com##.powerlink_wrap
 naver.com##div[class*="_ad_area"]
+search.naver.com###div_new_power_link_view
 n.news.naver.com##.media_end_linked:has-text(광고)
-n.news.naver.com##div[class*="_LAZY_LOADING_TEMPLATE_SCRIPT"]
-search.shopping.naver.com##.section_section__8wTvh
+m.naver.com###MM_search_container
+m.naver.com###_LEVERAGE_PROMOTION
+m.naver.com###sb-kh-recomm-wrap
+m.naver.com###sb-kh-shortents-wrap
+m.naver.com###wif_adx_banner_wrap
 m.naver.com###__MM_CHANNEL_UNSUBSCRIBE_ITEMS
 m.naver.com##div:has(> span.ad_bg)
 m.naver.com##.ad_section
-daum.net##div[class^="ad_"]
+
+! Daum ads
+daum.net##.box_adgoogle
 daum.net##.box_ad
 daum.net##.tit_ad
+
+! Nate ads (verified against the live home page on 2026-07-14)
+nate.com##div[class^="area_ad"]
+nate.com##div[id^="ad_layer"]
+nate.com##.adBox
+nate.com##.search_keyword
+nate.com##ul.content-list.type-shop
+
+! Zum ads (verified against the live home page on 2026-07-14)
+zum.com##.shopping_adbox
+
+! Coupang ads
 ||m.coupang.com/vm/mlp/^
-||m.coupang.com/vm/mlp/mweb/^
+coupang.com###sdp-ad-middle-banner-md-position
+coupang.com###sdp-ad-middle-banner-lg-position
+
+! Korean communities and deal sites
 ppomppu.co.kr##div[class^="ad-banner"]
 ppomppu.co.kr##.ppomCou
-dcinside.com,gall.dcinside.com###top > div.gnb_bar nav.gnb ul.gnb_list > li.gnb_more
 dcinside.com,gall.dcinside.com###top > div.gnb_bar > nav.gnb > ul.gnb_list > li.gnb_more
 algumon.com##li:has(span:has-text(스폰서))
 algumon.com##li:has(span:has-text(광고))
 algumon.com##.dashboard.component-desktop
 etoland.co.kr##div[id^="jizsl_"]
-kissneo.co##.ads
-kissneo.co##.ad-y
+etoland.co.kr###bo_v > div.layer-footer:nth-child(2)
+etoland.co.kr###bo_v > ul:nth-child(2)
 xn--v69ak0xskm.com##.map-pc-vertical-ad-anchor
 xn--v69ak0xskm.com##.map-pc-bottom-band-ad-anchor
 xn--v69ak0xskm.com##.map-like-ranking-ad-item
-ntp.msn.com##.recommended-sites
-ntp.msn.com###recommendedSites
-ntp.msn.com##.recommendedSitesSponsoredLabel
+
+! Other site-specific rules retained from the family filter
+kissneo.co##.ads
+kissneo.co##.ad-y
 startpage.com###master-1
 dramago.in###custom_html-9
 dramago.in##.widget_text
 dramago.in##.widget
 dramago.in##.widget_custom_html
 new.mnd.go.kr##div:nth-child(2) > button
+
+! Personal streaming-site decluttering
 streameast24.net,falconstreams.net##header
 streameast24.net,falconstreams.net##footer
 streameast24.net,falconstreams.net##div[class*="bg-[#5865F2]"]
@@ -92,7 +275,6 @@ streamed.pk,ppv.to,ppv.domains,ppv.st,ppv.is,ppv.lc##div[data-orientation="verti
 streamed.pk,ppv.to,ppv.domains,ppv.st,ppv.is,ppv.lc##div[class*="mt-6"]:has(a[href*="discord.com"])
 streamed.pk,ppv.to,ppv.domains,ppv.st,ppv.is,ppv.lc##div[class*="md:w-1/4"]:has(div[class*="chat-container"])
 streamed.pk,ppv.to,ppv.domains,ppv.st,ppv.is,ppv.lc##div[class*="bg-primary/10"]
-streamed.pk,ppv.to,ppv.domains,ppv.st,ppv.is,ppv.lc##button:has(svg.lucide-copy)
 streamed.pk,ppv.to,ppv.domains,ppv.st,ppv.is,ppv.lc##button:has(span.i-lucide\:share)
 streamed.pk,ppv.to,ppv.domains,ppv.st,ppv.is,ppv.lc##div[class*="w-[25.5vw]"]
 streamed.pk,ppv.to,ppv.domains,ppv.st,ppv.is,ppv.lc##div[class="lg:hidden flex-1 min-h-0"]
