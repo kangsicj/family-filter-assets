@@ -1,0 +1,9 @@
+{
+  "title": "Jin Family AdGuard Custom Rules",
+  "description": "Family allowlist, compatibility fixes, and site-scoped ad and clutter rules.",
+  "homepage": "https://github.com/kangsicj/family-filter-assets",
+  "source": "https://github.com/kangsicj/family-filter-assets/blob/main/docs/filters/2026/7f3a91c2-family.txt",
+  "version": "2026.07.14.1",
+  "last_modified": "2026-07-14",
+  "expires": "1 day"
+}
