@@ -74,6 +74,13 @@ dramago.in##.widget_custom_html
 new.mnd.go.kr##div:nth-child(2) > button
 
 ! Personal streaming-site decluttering
+! 2ix2TV's nested Nydus player (verified live on 2026-08-18)
+! Neutralize the detector before it can stop playback; keep CSS fallbacks for
+! clients that inject scriptlets late or do not support them.
+mysql-export-crypt.de#%#//scriptlet('set-constant', 'checkAdBlock', 'noopFunc')
+mysql-export-crypt.de#$##Ad728x90, #ad-banner { display: block !important; visibility: visible !important; opacity: 1 !important; width: 728px !important; height: 90px !important; }
+mysql-export-crypt.de###adblock-notice
+
 streameast24.net,falconstreams.net##header
 streameast24.net,falconstreams.net##footer
 streameast24.net,falconstreams.net##div[class*="bg-[#5865F2]"]
