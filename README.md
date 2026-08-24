@@ -45,7 +45,8 @@ Source files:
 - `filter-src/metadata.json`: published filter metadata
 
 The published filter is kept synchronized with the reviewed source rules before
-CI validation and distribution.
+CI validation and distribution. Any rule change must update the generated filter
+from the source with `python scripts/build_filter.py` before pushing.
 
 Rebuild and verify the published file:
 
