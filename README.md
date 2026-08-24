@@ -44,6 +44,9 @@ Source files:
 - `filter-src/rules.txt`: reviewed compatibility, blocking, and decluttering rules
 - `filter-src/metadata.json`: published filter metadata
 
+The published filter is kept synchronized with the reviewed source rules before
+CI validation and distribution.
+
 Rebuild and verify the published file:
 
 ```text
