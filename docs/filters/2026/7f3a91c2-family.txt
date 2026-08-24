@@ -281,3 +281,6 @@ streamed.pk,ppv.to,ppv.domains,ppv.st,ppv.is,ppv.lc##div[class="lg:hidden flex-1
 streamed.pk,ppv.to,ppv.domains,ppv.st,ppv.is,ppv.lc##div[class*="fixed"][class*="bottom-0"][class*="z-50"]
 streamed.pk,ppv.to,ppv.domains,ppv.st,ppv.is,ppv.lc#$#div[class*="lg:mr-[25.5vw]"] { margin-right: 0 !important; }
 streamed.pk,ppv.to,ppv.domains,ppv.st,ppv.is,ppv.lc#$#main { min-height: 100vh !important; padding-bottom: 0 !important; }
+
+! Flixhub video player sizing
+flixhub.studio##video#liveVideoPlayer:style(width: 100% !important; height: 100% !important; max-width: 100% !important; max-height: 100% !important; object-fit: contain !important; position: absolute !important; top: 50% !important; left: 50% !important; transform: translate(-50%, -50%) !important; margin: 0 !important; padding: 0 !important;)
