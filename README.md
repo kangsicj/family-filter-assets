@@ -1,18 +1,64 @@
-# Family Filter Assets
+<div align="center">
 
-Family-shared AdGuard custom filter distribution. The published list combines
-the family's explicit allowlist, narrowly scoped compatibility exceptions, and
-reviewed site-specific ad or decluttering rules.
+<img src=".github/assets/banner.svg" alt="Family Filter — a calm, ad-free web for the whole family" width="100%">
 
-## AdGuard subscription URL
+<br>
 
-Add this URL as a custom filter in AdGuard:
+[![Validate filter](https://github.com/kangsicj/family-filter-assets/actions/workflows/validate-filter.yml/badge.svg)](https://github.com/kangsicj/family-filter-assets/actions/workflows/validate-filter.yml)
+<a href="https://kangsicj.github.io/family-filter-assets/filters/2026/7f3a91c2-family.txt"><img src="https://img.shields.io/badge/AdGuard-custom%20filter-68BC71?style=for-the-badge&logo=adguard&logoColor=white" alt="AdGuard custom filter"></a>
+<a href="https://kangsicj.github.io/family-filter-assets/filters/2026/7f3a91c2-family.txt"><img src="https://img.shields.io/badge/GitHub-Pages-222222?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Pages"></a>
+<a href="https://fairy.hada.io/@jinny"><img src="https://img.shields.io/badge/Fairy-Sponsor-FF6FB5?style=for-the-badge&logo=githubsponsors&logoColor=white" alt="Fairy Sponsor"></a>
+
+**The family's shared AdGuard filter: an auditable allowlist, narrowly scoped compatibility<br>exceptions and reviewed site-specific ad & clutter rules.**
+
+[Subscribe](#-subscribe) · [What it does](#-what-it-does) · [Docs](#-documentation) · [Support](#-support)
+
+</div>
+
+---
+
+## 🔔 Subscribe
+
+<div align="center">
+
+[**➕ Add to AdGuard**](https://subscribe.adblockplus.org/?location=https%3A%2F%2Fkangsicj.github.io%2Ffamily-filter-assets%2Ffilters%2F2026%2F7f3a91c2-family.txt&title=Family%20Filter)
+
+</div>
+
+Or add this URL as a custom filter in AdGuard:
 
 ```text
 https://kangsicj.github.io/family-filter-assets/filters/2026/7f3a91c2-family.txt
 ```
 
-## Allowlist behavior
+## ✨ What it does
+
+<table>
+<tr>
+<td width="33%" valign="top">
+
+### ✅ Allowlist
+Hosts the family relies on, kept auditable in plain text.
+
+</td>
+<td width="33%" valign="top">
+
+### 🇰🇷 Korean sites
+Site-scoped cleanup for Naver, Daum, Nate, Zum, communities and streaming.
+
+</td>
+<td width="33%" valign="top">
+
+### 🧪 CI-validated
+Every change is parsed by AGLint and rebuilt reproducibly.
+
+</td>
+</tr>
+</table>
+
+## 📚 Documentation
+
+### Allowlist behavior
 
 `filter-src/allowlist.txt` contains all 192 hosts imported from the AdGuard
 browser extension. The build emits 171 effective `@@||host^$document` rules;
@@ -24,7 +70,7 @@ and script-based filtering on the matched host and its subdomains, including
 rules from other enabled filter lists. Keep an entry only when that broad
 exception is intentional.
 
-## Korean site coverage
+### Korean site coverage
 
 This list keeps custom rules site-scoped to reduce false positives. It includes
 family-specific coverage for Naver, Daum, Nate, Zum, several Korean communities,
@@ -36,7 +82,7 @@ For broad Korean advertising coverage, enable
 list. This repository is an additive family override, not a replacement for a
 full regional filter.
 
-## Maintenance
+### Maintenance
 
 Source files:
 
@@ -60,7 +106,7 @@ The generator rejects duplicate hosts, invalid hosts, duplicate site rules, and
 unscoped global cosmetic rules. CI also parses both rule files with AdGuard's
 AGLint.
 
-## GitHub Pages setup
+### GitHub Pages setup
 
 Repository settings:
 
@@ -72,3 +118,11 @@ Folder: /docs
 
 Only the generated filter under `docs/filters/2026/7f3a91c2-family.txt` is
 intended to be subscribed to directly.
+
+## 💖 Support
+
+This is a personal project built in spare time. If it helps you, you can support its development on **Fairy** — it goes to hosting costs and development time.
+
+<a href="https://fairy.hada.io/@jinny"><img src="https://img.shields.io/badge/%F0%9F%A7%9A%20Support%20on%20Fairy-FF6FB5?style=for-the-badge" alt="Support on Fairy"></a>
+
+<div align="right"><sub>Made with ♥ by <a href="https://github.com/kangsicj">@kangsicj</a></sub></div>
